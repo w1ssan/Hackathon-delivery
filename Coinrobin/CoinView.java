@@ -15,8 +15,8 @@ import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
-import sideScroller.LevelData;
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -238,16 +238,19 @@ public class CoinView extends Pane {
         scoretxt.setY(20);
 
         player = new AnimatedAsset(0, 600, 40,
-                new Image(getClass().getResourceAsStream("assets\\slime1.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime2.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime3.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime4.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime5.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime6.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime7.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime8.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime9.png")),
-                new Image(getClass().getResourceAsStream("assets\\slime10.png")));
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime1.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime2.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime3.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime4.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime5.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime6.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime7.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime8.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime9.png")),
+                new Image(new FileInputStream("D:\\IdeaProjects\\letsfx\\src\\Coinrobin\\assets\\slime10.png")));
+
+                //new Image(getClass().getResourceAsStream("assets\\Blinky.png")),
+                //new Image(getClass().getResourceAsStream("assets\\blinky2.png")));
         gameRoot.getChildren().add(player);
 
 
